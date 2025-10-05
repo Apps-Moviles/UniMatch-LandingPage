@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>UniMatch – Consigue proyectos reales desde tu celular</title>
+  <meta name="description" content="UniMatch es la app móvil que conecta a estudiantes universitarios con proyectos reales de empresas. Postula, chatea y entrega desde tu teléfono."/>
+  <meta name="keywords" content="app móvil, estudiantes, proyectos, freelance, portafolio, prácticas, trabajo para estudiantes"/>
+  <meta name="author" content="UniMatch Team"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/d72909e20f.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="u-header">
+    <div class="u-header__bar">
+      <button class="u-header__burger" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a href="#top" class="u-header__brand">
+        <img src="images/unimatch oscuro.png" alt="UniOMatch" width="100" height="100" />
+      </a>
+
+      <nav class="u-header__nav">
+        <ul class="u-nav">
+          <li><a href="#features" class="u-nav__link">La App</a></li>
+          <li><a href="#flow" class="u-nav__link">Cómo funciona</a></li>
+          <li><a href="#screens" class="u-nav__link">Pantallas</a></li>
+          <li><a href="#faq" class="u-nav__link">FAQs</a></li>
+          <li><a href="#team" class="u-nav__link">Equipo</a></li>
+          <li class="u-nav__cta"><a href="#download" class="u-btn u-btn--primary">Descargar</a></li>
+        </ul>
+      </nav>
+
+      <div class="u-header__lang">
+        <button id="langToggle" class="u-chip">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO: mobile-first con mockup + badges -->
+    <section class="s-hero" id="inicio">
+      <div class="s-hero__copy">
+        <h1 class="s-hero__title">
+          Proyectos reales. <br/> Desde tu celular.
+        </h1>
+        <p class="s-hero__subtitle">
+          Postula, conversa con empresas y entrega resultados sin salir de la app.
+        </p>
+
+        <div class="s-hero__badges" id="download">
+          <a class="store-badge" href="#" aria-label="Descargar en App Store">
+            <i class="fa-brands fa-apple"></i> App Store
+          </a>
+          <a class="store-badge" href="#" aria-label="Descargar en Google Play">
+            <i class="fa-brands fa-google-play"></i> Google Play
+          </a>
+        </div>
+
+        <div class="s-hero__mini">
+          <span><i class="fa-solid fa-shield"></i> Verificación de identidad</span>
+          <span><i class="fa-solid fa-star"></i> Portafolio validado</span>
+        </div>
+      </div>
+
+      <div class="s-hero__mockup">
+        <img src="images/captura.png" alt="Vista de la app UniMatch en un teléfono" />
+      </div>
+
+      <!-- Separador curvo -->
+      <svg class="curve curve--bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C240,120 1200,-40 1440,40 L1440,120 L0,120 Z"></path>
+      </svg>
+    </section>
+
+    <!-- Feature stack: tarjetas apiladas con íconos grandes -->
+    <section class="s-features" id="features">
+      <div class="wrap">
+        <header class="s-head">
+          <h2>La app que te acerca a tu primer contrato</h2>
+          <p>Diseñada para estudiantes y recién egresados. Simple, directa y lista para usar.</p>
+        </header>
+
+        <div class="card-stack">
+          <article class="card">
+            <i class="card__icon fa-solid fa-compass"></i>
+            <h3>Explora oportunidades</h3>
+            <p>Descubre proyectos por carrera, habilidades o duración. Guarda y sigue tus favoritos.</p>
+          </article>
+
+          <article class="card">
+            <i class="card__icon fa-solid fa-message"></i>
+            <h3>Chatea con empresas</h3>
+            <p>Aclara dudas, acuerda entregables y tiempos dentro de la app. Todo queda registrado.</p>
+          </article>
+
+          <article class="card">
+            <i class="card__icon fa-solid fa-clipboard-check"></i>
+            <h3>Entrega y califica</h3>
+            <p>Sube avances, recibe feedback y construye un historial verificable para tu portafolio.</p>
+          </article>
+
+          <article class="card">
+            <i class="card__icon fa-solid fa-bolt"></i>
+            <h3>Pagos seguros</h3>
+            <p>Trabajo terminado, pago liberado. Transparencia y protección para ambos lados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline “Cómo funciona” con zigzag/diagonal -->
+    <section class="s-flow" id="flow">
+      <svg class="diagonal diagonal--top" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,120 L1440,0 L1440,120 Z"></path>
+      </svg>
+
+      <div class="wrap">
+        <header class="s-head s-head--light">
+          <h2>¿Cómo funciona?</h2>
+          <p>Cuatro pasos simples desde tu teléfono.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__dot">1</div>
+            <div class="timeline__content">
+              <h3>Crea tu perfil</h3>
+              <p>Sube evidencias, cursos y proyectos previos. Te ayudamos con un checklist guiado.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot">2</div>
+            <div class="timeline__content">
+              <h3>Postula en un tap</h3>
+              <p>Filtra por pago, duración y modalidad. Aplica con carta rápida y tu portafolio.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot">3</div>
+            <div class="timeline__content">
+              <h3>Coordina entregables</h3>
+              <p>Chat integrado, hitos y fechas. Recibe feedback y evita correos sueltos.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot">4</div>
+            <div class="timeline__content">
+              <h3>Construye reputación</h3>
+              <p>Termina, cobra y suma calificaciones verificadas para tu siguiente proyecto.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <svg class="diagonal diagonal--bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,0 L1440,120 L0,120 Z"></path>
+      </svg>
+    </section>
+
+    <!-- Screens carousel (deslizable) -->
+    <section class="s-screens" id="screens">
+      <div class="wrap">
+        <header class="s-head">
+          <h2>Lo que verás en la app</h2>
+          <p>Algunas pantallas clave de UniMatch.</p>
+        </header>
+
+        <div class="carousel" data-carousel>
+          <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel__track">
+            <img src="images/view1.png" alt="Pantalla: feed de proyectos" class="carousel__item"/>
+            <img src="images/view2.png" alt="Pantalla: detalle de proyecto" class="carousel__item"/>
+            <img src="images/view3.png" alt="Pantalla: chat con empresa" class="carousel__item"/>
+            <img src="images/view4.png" alt="Pantalla: progreso y hitos" class="carousel__item"/>
+            <img src="images/view5.png" alt="Pantalla: perfil y portafolio" class="carousel__item"/>
+          </div>
+
+          <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band de métricas / confianza -->
+    <section class="s-metrics">
+      <div class="wrap metrics">
+        <div class="metric">
+          <span class="metric__num">+120</span>
+          <span class="metric__txt">empresas interesadas</span>
+        </div>
+        <div class="metric">
+          <span class="metric__num">+800</span>
+          <span class="metric__txt">postulaciones</span>
+        </div>
+        <div class="metric">
+          <span class="metric__num">4.8/5</span>
+          <span class="metric__txt">satisfacción de usuarios</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios tipo “cards” compactas -->
+    <section class="s-testimonials">
+      <div class="wrap">
+        <header class="s-head">
+          <h2>Historias reales</h2>
+          <p>Resultados obtenidos usando UniMatch.</p>
+        </header>
+
+        <div class="t-grid">
+          <article class="t-card">
+            <img src="images/per1.png" alt="Estudiante" class="t-card__avatar">
+            <blockquote>“Conseguí un proyecto, lo completé. Una gran ayuda para mi carrera laboral.”</blockquote>
+            <footer>Leonardo T. – Diseñador gráfico</footer>
+          </article>
+
+          <article class="t-card">
+            <img src="images/per23.png" alt="Empresa" class="t-card__avatar">
+            <blockquote>“Publicamos un proyecto y a los días tuvimos miles de candidatos idóneos.”</blockquote>
+            <footer>Maria D. – Líder en LimaTEC</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs en acordeón -->
+    <section class="s-faq" id="faq">
+      <div class="wrap">
+        <header class="s-head">
+          <h2>Preguntas frecuentes</h2>
+        </header>
+
+        <div class="faq">
+          <details>
+            <summary>¿Quiénes pueden postular?</summary>
+            <p>Estudiantes y recién egresados con perfil verificado dentro de la app.</p>
+          </details>
+          <details>
+            <summary>¿Qué tipos de proyectos hay?</summary>
+            <p>Proyectos reales en innovación, desarrollo, diseño, data, marketing y más.</p>
+          </details>
+          <details>
+            <summary>¿La app tiene costo?</summary>
+            <p>Para estudiantes es gratis. Las empresas pagan por publicar y contratar.</p>
+          </details>
+          <details>
+            <summary>¿Cómo es el pago?</summary>
+            <p>Se libera al completar los entregables acordados. Mecanismos de protección.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo (grid circular) -->
+    <section class="s-team" id="team">
+      <div class="wrap">
+        <header class="s-head">
+          <h2>Equipo</h2>
+        </header>
+
+        <div class="team-grid">
+          <div class="member">
+            <img src="images/foto-josue.jpg" alt="Javier" />
+            <h4>Josue</h4>
+          </div>
+          <div class="member">
+            <img src="images/foto-gonzales.png" alt="Leonardo" />
+            <h4>Javier</h4>
+          </div>
+          <div class="member">
+            <img src="images/foto-alessandra.jpg" alt="Renzo" />
+            <h4>Alessandra</h4>
+          </div>
+          <div class="member">
+            <img src="images/foto-renzo.png" alt="Andres" />
+            <h4>Renzo</h4>
+          </div>
+        </div>
+
+
+    <!-- CTA final pegajoso en móvil -->
+    <div class="sticky-cta">
+      <a href="#download" class="u-btn u-btn--primary u-btn--wide">
+        <i class="fa-solid fa-download"></i> Descargar la app
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="u-footer">
+    <ul class="u-footer__links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#features">La App</a></li>
+      <li><a href="#flow">Cómo funciona</a></li>
+      <li><a href="#screens">Pantallas</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="#team">Equipo</a></li>
+    </ul>
+
+    <ul class="u-footer__social">
+      <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+    </ul>
+
+    <p class="u-footer__copy">©2025 UniMatch • Todos los derechos reservados</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
