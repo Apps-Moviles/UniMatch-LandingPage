@@ -5,7 +5,7 @@
   --ink:#1C1F2B;
   --ink-weak:#3b4256;
   --card:#ffffff;
-  --accent:#facc15; /* mantiene tu identidad cromática */
+  --accent:#facc15;
 }
 html,body{ height:100%; }
 body{
@@ -75,10 +75,8 @@ body{
 .s-hero__mockup img{
   width:min(230px,70%);
   filter:drop-shadow(0 10px 40px rgba(0,0,0,.5));
-  margin-bottom:100px; /* separa la imagen de la curva */
+  margin-bottom:100px;
 }
-
-
 
 .curve {
   position:absolute;
@@ -88,7 +86,6 @@ body{
   height:auto;
   bottom:0;
 }
-
 .curve--bottom {
   fill:var(--bg);
   display:block;
@@ -96,6 +93,7 @@ body{
   height:auto;
   transform:translateY(1px);
 }
+
 /* Features */
 .s-features{ padding:4rem 0; }
 .s-head{ text-align:center; margin-bottom:2rem; }
@@ -117,7 +115,10 @@ body{
   position:relative; background:var(--ink); color:#fff; padding:3rem 0 4rem;
 }
 .diagonal{ position:absolute; left:0; right:0; height:120px; fill:var(--ink); }
-.diagonal--top{ top:-1px; }
+.diagonal--top{
+  top:50px; /* antes -1px */
+}
+
 .diagonal--bottom{ bottom:-1px; fill:var(--bg); }
 
 .timeline{ list-style:none; display:grid; gap:1.4rem; margin-top:1rem; margin-bottom:70px;}
@@ -150,7 +151,7 @@ body{
 .carousel__btn--prev{ left:0; }
 .carousel__btn--next{ right:0; }
 
-/* Métricas */
+/* Metrics */
 .s-metrics{ background:#fff; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
 .metrics{
   display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; padding:1.6rem 0; text-align:center;
@@ -158,7 +159,7 @@ body{
 .metric__num{ font-size:1.8rem; font-weight:800; }
 .metric__txt{ color:var(--ink-weak); }
 
-/* Testimonios */
+/* Testimonials */
 .s-testimonials{ padding:4rem 0; }
 .t-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
 .t-card{
@@ -166,6 +167,47 @@ body{
   display:grid; gap:.6rem;
 }
 .t-card__avatar{ width:64px; height:64px; border-radius:50%; border:1px solid var(--ink); }
+
+/* ⭐⭐⭐ NEW: VIDEOS SECTION ⭐⭐⭐ */
+.s-videos{
+  padding:4rem 0;
+}
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+  margin-top:2rem;
+}
+
+.video-card{
+  background:#fff;
+  border:1.5px solid var(--ink);
+  border-radius:1rem;
+  padding:1rem;
+  text-align:center;
+}
+
+.video-card h3{
+  margin-bottom:1rem;
+  font-weight:800;
+}
+
+.video-wrap{
+  position:relative;
+  width:100%;
+  padding-bottom:56.25%;
+  border-radius:1rem;
+  overflow:hidden;
+  border:1px solid var(--ink);
+}
+
+.video-wrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
 
 /* FAQ */
 .s-faq{ padding:4rem 0; }
@@ -175,7 +217,7 @@ body{
 .faq summary{ font-weight:700; cursor:pointer; }
 .faq p{ margin-top:.6rem; }
 
-/* Equipo */
+/* Team */
 .s-team{ padding:4rem 0; }
 .team-grid{
   display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-bottom:2rem;
@@ -208,6 +250,7 @@ body{
 @media (max-width: 1100px){
   .card-stack{ grid-template-columns:repeat(2,1fr); }
   .team-grid{ grid-template-columns:repeat(3,1fr); }
+  .video-grid{ grid-template-columns:repeat(2,1fr); }
 }
 
 /* Tablets medianas */
@@ -223,6 +266,7 @@ body{
   .metrics{ grid-template-columns:1fr 1fr; }
   .t-grid{ grid-template-columns:1fr; }
   .sticky-cta{ display:block; }
+  .video-grid{ grid-template-columns:1fr; }
 }
 
 /* Móviles */
@@ -243,7 +287,7 @@ body{
   .timeline__item{ grid-template-columns:1fr; text-align:center; }
 }
 
-/* Móviles pequeños (≤480px) */
+/* Móviles pequeños */
 @media (max-width: 480px){
   .s-hero{ padding:4rem 0 2rem; }
   .s-hero__title{ font-size:1.8rem; }
